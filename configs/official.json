@@ -1,0 +1,30 @@
+{
+  "_nota": "Parâmetros fixados para que os dois times rodem EXATAMENTE a mesma coisa. O plano diz 'agente oficial, sem alterar o código e com os mesmos parâmetros' mas não lista os parâmetros: aqui estão os defaults do benchmark_runner.py da VAKRA no commit fixado. CONFIRMAR com a organização antes de 17/11.",
+  "vakra": {
+    "repo": "https://github.com/IBM/vakra.git",
+    "commit": "00dc68febdc28f5c3498ac00e2cd7d7b89dee315"
+  },
+  "lumi": {
+    "hf_repo": "ceia-br/lumi-4b",
+    "revision": "27b30f40b930fd05cee5e1c1f8790f70fa5b816d",
+    "served_model_name": "lumi-4b"
+  },
+  "agent": {
+    "provider": "openai",
+    "temperature": 0.0,
+    "top_k_tools": 128,
+    "max_iterations": null,
+    "agent_timeout_seconds": 300
+  },
+  "serving": {
+    "port": 8000,
+    "max_model_len": 32768,
+    "enable_thinking": false,
+    "tool_call_parser": "qwen3_coder",
+    "docker_image": "vllm/vllm-openai:latest"
+  },
+  "judge": {
+    "backend": "groq",
+    "model": "openai/gpt-oss-120b"
+  }
+}

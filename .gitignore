@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+.pytest_cache/
+
+# Segredos (nunca versionar)
+.env
+
+# Clone fixado da IBM/vakra (make vakra-clone)
+vendor/
+
+# Conjunto de dev montado + mapa de universos estendido
+work/
+
+# Saídas de cada execução (baseline, treino, ...)
+runs/
+
+# Chat template e assets baixados do HF
+.cache/
+
+*.log

@@ -1,0 +1,4 @@
+# Fim de linha fixo em LF, independente do autocrlf de quem clona (o make e os scripts
+# em bash quebram com CRLF).
+* text=auto eol=lf
+*.pdf binary
